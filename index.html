@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casetify</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Custom Phone Case</h1>
+            <p>임팩트 케이스</p>
+            <div class="price">
+                <p>₩77500</p>
+                <p>무료배송</p>
+            </div>
+        </div>
+
+        <div class="case">
+            <div class="case-frames">
+                <div class="frame">
+                    <img src="img/폰프레임.png" alt="">
+                </div>
+                <div class="frame">
+                    <div class="frame-bg"></div>
+                </div>
+                <!-- 스타일 -->
+                <div class="frame">
+                    <div class="style-frame" id="style-frame"></div>
+                </div>
+                <div class="frame">
+                    <img src="img/틀프레임.png" alt="">
+                </div>
+                <div class="frame">
+                    <img src="img/카메라프레임.png" alt="">
+                </div>
+                <div class="frame">
+                    <img src="img/카메라틀프레임.png" alt="">
+                </div>
+                <div class="frame" id="text">
+                    <p id="output">text</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="setting">
+            <div class="set-title">
+                <h2>커스텀</h2>
+                <button><img src="img/refresh-ccw.svg" alt=""></button>
+            </div>
+            <div class="labels">
+                <label for="text">
+                    <h3>텍스트</h3>
+                    <input id="input-text" name="text" type="text" placeholder="텍스트를 입력하세요." maxlength="6">
+                </label>
+
+                <label id="style" for="style">
+                    <h3>스타일</h3>
+                    <div class="style-container">
+                        <input id="image1" name="style" type="button">
+                        <input id="image2" name="style" type="button">
+                        <input id="image3" name="style" type="button">
+                    </div>
+                </label>
+
+                <label id="design" for="design">
+                    <h3>디자인</h3>
+                    <div class="design-container">
+                        <input id="design" name="design" type="button">
+                        <input id="design" name="design" type="button">
+                        <input id="design" name="design" type="button">
+                        <input id="design" name="design" type="button">
+                        <input id="design" name="design" type="button">
+                    </div>
+                </label>
+
+                <label id="font" for="font">
+                    <h3>폰트</h3>
+                    <div class="font-container">
+                        <input id="font1" name="font" type="button">
+            <input id="font2" name="font" type="button">
+                    </div>
+                </label>
+
+                <label id="font-color" for="font-color">
+                    <h3>폰트 컬러</h3>
+                    <div class="font-color-container">
+                        <input id="color1" name="font-color" type="button">
+                        <input id="color2" name="font-color" type="button">
+                        <input id="color3" name="font-color" type="button">
+                        <input id="color4" name="font-color" type="button">
+                        <input id="color5" name="font-color" type="button">
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
