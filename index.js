@@ -12,6 +12,21 @@ const fontColorBtns = document.querySelectorAll('div.font-color-container input'
 document.getElementById('input-text').addEventListener('input', function() {
     let inputText = this.value;
     document.getElementById('output').innerText = inputText;
+
+    
+        let inputValue = event.target.value;
+    
+        // 영어 알파벳만 포함된 텍스트인지 확인
+        let isEnglish = /^[a-zA-Z]*$/.test(inputValue);
+    
+        // 영어 알파벳이 아닌 경우 입력 제한
+        if (!isEnglish) {
+            // 영어 이외의 문자 제거
+            let sanitizedValue = inputValue.replace(/[^a-zA-Z]/g, '');
+            // 입력 필드에 반영
+            event.target.value = sanitizedValue;
+        }
+    
 });
 
 //폰트
